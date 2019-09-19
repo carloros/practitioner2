@@ -1,3 +1,4 @@
 <?php
-echo "Hello carlos";
+$greeting = 'Hola';
+echo $greeting;
 
