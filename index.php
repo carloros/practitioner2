@@ -2,6 +2,13 @@
 
 // include i require son igual pero el require peta si no existeix el fitxer
 
-$name = 'Carlos';
+$classroom = [
+    'Sergi',
+    'karim',
+    'Joan',
+    'Carlos',
+    'Airam',
+    'Dídac'
+];
 
 require 'index.template.php';
