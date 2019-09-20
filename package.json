@@ -1,6 +1,13 @@
 {
-  "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0"
+    "name": "practitioner",
+    "devDependencies": {
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.0.0",
+        "@babel/preset-env": "^7.6.0",
+        "laravel-mix": "^5.0.0"
+    },
+    "scripts": {
+        "dev-antic": "babel source -d js",
+        "dev": "node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     }
 }
