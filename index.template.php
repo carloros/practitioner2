@@ -9,16 +9,17 @@
 <body>
     <!-- <ul>
         <?php 
-        foreach ($classroom as $person){
-            echo "<li>$person</li>";
+        foreach ($classroom as $task){
+            echo "<li>$task</li>";
         }
         ?>
     </ul> -->
-    <h1><?= $person['fullname'] ?></h1>
+    <h1><?= $task['name'] ?></h1>
     <ul>
-        <li>Nom: <?= $person['name'] ?></li>
-        <li>Cognoms: <?= $person['surname'] ?></li>
-        <li>Email: <?= $person['email'] ?></li>
+        <li>Description: <?= $task['description'] ?></li>
+        <li>Completed: 
+            <?= $task['completed'] ? 'Sí' : 'No'; ?>
+        </li>
     </ul>
 </body>
 </html>

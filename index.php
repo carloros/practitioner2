@@ -3,7 +3,7 @@
 // ESTE FITXER ES EL CONTROLADOR
 
 //MODEL
-require './models/person.php';
+require './models/task.php';
 
 //VISTA
 require 'index.template.php';
