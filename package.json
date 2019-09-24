@@ -1,9 +1,9 @@
 {
     "name": "practitioner",
     "devDependencies": {
-        "@babel/cli": "^7.0.0",
-        "@babel/core": "^7.0.0",
-        "@babel/preset-env": "^7.6.0",
+        "@babel/cli": "^7.6.2",
+        "@babel/core": "^7.6.2",
+        "@babel/preset-env": "^7.6.2",
         "cross-env": "^6.0.0",
         "laravel-mix": "^5.0.0",
         "vue-template-compiler": "^2.6.10"
