@@ -95,12 +95,12 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/greeting */ "./source/templates/greeting.js");
+/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task */ "./source/templates/task.js");
 //import greeting from './templates/greeting.js'
 
 console.log('TEMPLATE:');
-console.log(_templates_greeting__WEBPACK_IMPORTED_MODULE_0__["template"]);
-document.body.innerHTML = _templates_greeting__WEBPACK_IMPORTED_MODULE_0__["template"];
+console.log(_templates_task__WEBPACK_IMPORTED_MODULE_0__["template"]);
+document.body.innerHTML = _templates_task__WEBPACK_IMPORTED_MODULE_0__["template"];
 
 /***/ }),
 
@@ -108,21 +108,27 @@ document.body.innerHTML = _templates_greeting__WEBPACK_IMPORTED_MODULE_0__["temp
 /*!*************************!*\
   !*** ./source/model.js ***!
   \*************************/
-/*! exports provided: name */
+/*! exports provided: name, task */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "task", function() { return task; });
 var name = 'Carlos';
+var task = {
+  name: 'Comprar llet',
+  description: 'Al Lidl',
+  completed: true
+};
 
 
 /***/ }),
 
-/***/ "./source/templates/greeting.js":
-/*!**************************************!*\
-  !*** ./source/templates/greeting.js ***!
-  \**************************************/
+/***/ "./source/templates/task.js":
+/*!**********************************!*\
+  !*** ./source/templates/task.js ***!
+  \**********************************/
 /*! exports provided: template */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -131,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "template", function() { return template; });
 /* harmony import */ var _model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model */ "./source/model.js");
 
-var template = "\n<h1>Hola ".concat(_model__WEBPACK_IMPORTED_MODULE_0__["name"], "!</h1>\n");
+var template = "\n<h1>".concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].name, "</h1>\n<ul>\n    <li>Descripci\xF3: ").concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].description, "</li>\n    <li>Completada: ").concat(_model__WEBPACK_IMPORTED_MODULE_0__["task"].completed, "</li>\n</ul>\n");
 
 
 /***/ }),

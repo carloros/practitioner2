@@ -1,3 +1,10 @@
 const name = 'Carlos'
 
-export {name}
+const task = {
+    name: 'Comprar llet',
+    description: 'Al Lidl',
+    completed: true,
+}
+
+export {name, task}
+
