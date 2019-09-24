@@ -90,10 +90,49 @@
 /*!***********************!*\
   !*** ./source/app.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module 'trim-right'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:562:25)\n    at Module.require (internal/modules/cjs/loader.js:692:17)\n    at require (/home/dgenc/Code/acacha/practitioner2/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)\n    at _trimRight (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/generator/lib/buffer.js:9:39)\n    at Buffer.get (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/generator/lib/buffer.js:47:17)\n    at Generator.generate (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/generator/lib/printer.js:76:22)\n    at Generator.generate (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/generator/lib/index.js:24:18)\n    at _default (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/generator/lib/index.js:91:14)\n    at generateCode (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/core/lib/transformation/file/generate.js:57:39)\n    at runSync (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/core/lib/transformation/index.js:50:51)\n    at runAsync (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/home/dgenc/Code/acacha/practitioner2/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _templates_greeting__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/greeting */ "./source/templates/greeting.js");
+//import greeting from './templates/greeting.js'
+
+console.log('TEMPLATE:');
+console.log(_templates_greeting__WEBPACK_IMPORTED_MODULE_0__["template"]);
+document.body.innerHTML = _templates_greeting__WEBPACK_IMPORTED_MODULE_0__["template"];
+
+/***/ }),
+
+/***/ "./source/model.js":
+/*!*************************!*\
+  !*** ./source/model.js ***!
+  \*************************/
+/*! exports provided: name */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
+var name = 'Carlos';
+
+
+/***/ }),
+
+/***/ "./source/templates/greeting.js":
+/*!**************************************!*\
+  !*** ./source/templates/greeting.js ***!
+  \**************************************/
+/*! exports provided: template */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "template", function() { return template; });
+/* harmony import */ var _model__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model */ "./source/model.js");
+
+var template = "\n<h1>Hola ".concat(_model__WEBPACK_IMPORTED_MODULE_0__["name"], "!</h1>\n");
+
 
 /***/ }),
 

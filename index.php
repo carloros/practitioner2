@@ -1,14 +1,9 @@
 <?php
 
-// include i require son igual pero el require peta si no existeix el fitxer
+// ESTE FITXER ES EL CONTROLADOR
 
-$classroom = [
-    'Sergi',
-    'karim',
-    'Joan',
-    'Carlos',
-    'Airam',
-    'Dídac'
-];
+//MODEL
+require './models/llista_classe.php';
 
+//VISTA
 require 'index.template.php';
