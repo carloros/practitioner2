@@ -1,5 +1,10 @@
 const name = 'Carlos'
 
-import greeting from './js/templates/greeting'
+//import greeting from './templates/greeting.js'
 
-document.body.innerHTML = template
+const greeting = `
+<h1>Hola ${name}</h1>
+`
+
+console.log(greeting)
+document.body.innerHTML = greeting
