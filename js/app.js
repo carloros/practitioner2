@@ -86,6 +86,35 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./helpers.js":
+/*!********************!*\
+  !*** ./helpers.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function log(value) {
+  console.log(value);
+}
+
+function saludar() {
+  console.log('Hello');
+}
+
+function suma(x, y) {
+  return x + y;
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  log: log,
+  saludar: saludar,
+  suma: suma
+});
+
+/***/ }),
+
 /***/ "./source/app.js":
 /*!***********************!*\
   !*** ./source/app.js ***!
@@ -95,12 +124,16 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task */ "./source/templates/task.js");
+/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers.js */ "./helpers.js");
+/* harmony import */ var _templates_task__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./templates/task */ "./source/templates/task.js");
 //import greeting from './templates/greeting.js'
 
-console.log('TEMPLATE:');
-console.log(_templates_task__WEBPACK_IMPORTED_MODULE_0__["template"]);
-document.body.innerHTML = _templates_task__WEBPACK_IMPORTED_MODULE_0__["template"];
+
+document.body.innerHTML = _templates_task__WEBPACK_IMPORTED_MODULE_1__["template"];
+_helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].log('prova');
+_helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].saludar();
+var result = _helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].suma(1, 2);
+console.log(result);
 
 /***/ }),
 
