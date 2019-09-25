@@ -2,15 +2,15 @@
 
 // ESTE FITXER ES EL CONTROLADOR
 
-//FUNCIONS GLOBALS O HELPERS
+// FUNCIONS GLOBALS O HELPERS
 require 'helpers.php';
 
 // dump();
 // dd();
 
-//MODEL
+// MODEL
 require './models/task.php';
 
 
-//VISTA
+// VISTA
 require 'index.template.php';
