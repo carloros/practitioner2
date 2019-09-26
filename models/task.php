@@ -7,7 +7,7 @@
 // ];
 
 try {
-    $pdo = new PDO('mysql:host=127.0.0.1:dbname:tasks', 'debian-sys-maint', 'Sw8lPYpAFLi5B3n4');
+    $pdo = new PDO('mysql:host=127.0.0.1:dbname=tasks', 'debian-sys-maint', 'Sw8lPYpAFLi5B3n4');
 } catch (PDOException $e) {
     die($e -> getMessage());
 }
