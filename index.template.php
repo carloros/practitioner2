@@ -9,13 +9,6 @@
 </head>
 
 <body>
-    <!-- <ul>
-        <?php
-        foreach ($classroom as $task) {
-            echo "<li>$task</li>";
-        }
-        ?>
-    </ul> -->
     <h1><?= $task->name ?></h1>
     <ul>
         <li>Description: <?= $task->description ?></li>
