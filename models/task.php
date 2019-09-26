@@ -12,12 +12,11 @@
 //    die($e -> getMessage());
 //};
 
-try{
-    $pdo = new PDO('mysql:host=127.0.0.1;dbname=tasks','debian-sys-maint','Sw8lPYpAFLi5B3n4');
-} catch (PDOException $e){
+try {
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=tasks', 'debian-sys-maint', 'Sw8lPYpAFLi5B3n4');
+} catch (PDOException $e) {
     die($e->getMessage());
 };
-
 
 $query = $pdo->prepare('SELECT * FROM tasks');
 
@@ -29,5 +28,4 @@ $results = $query->fetchAll();
 
 // die(var_dump);
 
-
-$task = results[0];
+$task = $results[0];
