@@ -3,13 +3,13 @@
 // ESTE FITXER ES EL CONTROLADOR
 
 // APLICATION PHP MODERNS
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 // FUNCIONS GLOBALS O HELPERS
-require 'helpers.php';
+require './helpers.php';
 
 // MODEL -- ESTAT
 require './models/task.php';
 
 // VISTA
-require 'index.template.php';
+require './index.template.php';
