@@ -1,8 +1,9 @@
 <?php
-
+use App\Controllers\PagesController;
 // ESTE FITXER ES EL CONTROLADOR
 
 // APLICATION PHP MODERNS
+
 require './vendor/autoload.php';
 
 // FUNCIONS GLOBALS O HELPERS
@@ -13,3 +14,5 @@ require './models/task.php';
 
 // VISTA
 require './index.template.php';
+
+new PagesController();
